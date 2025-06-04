@@ -1,0 +1,9 @@
+[package]
+name = "infrastructure"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+diesel = { version = "2.0.0", features = ["sqlite"] }
+dotenvy = "0.15"
+tempfile = "3.20.0"
