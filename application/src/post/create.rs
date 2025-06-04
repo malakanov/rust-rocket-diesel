@@ -1,4 +1,4 @@
-use domain::models::{Post, NewPost};
+use domain::models::{NewPost};
 use shared::response_models::{Response, ResponseBody};
 use infrastructure::establish_connection;
 use diesel::prelude::*;
