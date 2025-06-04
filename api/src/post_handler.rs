@@ -5,7 +5,7 @@ use rocket::{get, post};
 use rocket::response::status::{NotFound, Created}; 
 use rocket::serde::json::Json;
 
-#[get("/")]
+#[get("/posts")]
 pub fn list_posts_handler() -> String {
     let posts: Vec<Post> = read::list_posts();
     let response = Response { body: ResponseBody::Posts(posts) };
